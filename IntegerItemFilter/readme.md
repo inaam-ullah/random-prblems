@@ -8,7 +8,7 @@ For example, if the input array contains values 1-a-b-2, after processing, the o
 Sample input: 1-a-b-2
 Sample output: 1-2
 
-### Note:
+### Note
 
 Your code must be able to print the sample output from the provided sample input. However, your code is run against multiple hidden test cases.
 
