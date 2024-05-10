@@ -12,3 +12,19 @@ The goal of this project is to write a simple program that, given a paragraph of
 ## Prerequisites
 
 - Ruby
+
+## Project Setup
+- Create the project directory:
+```bash
+mkdir word-count-challenge
+cd word-count-challenge
+```
+
+- Create the main Ruby file
+- Added solution
+
+## Running the Program
+
+- Run Program:
+
+   ``ruby word_count.rb``
