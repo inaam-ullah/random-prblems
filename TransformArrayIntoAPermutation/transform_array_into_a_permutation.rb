@@ -1,19 +1,17 @@
 def min_operations_to_permutation(arr)
-  arr.sort!
   n = arr.size
-  total_operations = 0
+  arr.sort!
+
+  total_cost = 0
 
   arr.each_with_index do |val, index|
-    total_operations += (val - (index + 1)).abs
+    target_value = index + 1
+    total_cost += (val - target_value).abs
   end
 
-  total_operations
+  total_cost
 end
 
-# DO NOT CHANGE the code below, we use it to grade your submission, if changed your submission will be rated
-# You can change this as your need.
-if __FILE__ == $0
-  line = gets.chomp
-  k = line.split.map(&:to_i)
-  puts min_operations_to_permutation(k)
-end
+puts ("Input [3, 2, 1, 4]\nOutput: #{min_operations_to_permutation([3, 2, 1, 4])}\n\n")
+puts ("Input [4, 1, 4, 2]\nOutput: #{min_operations_to_permutation([4, 1, 4, 2])}\n\n")
+puts ("Input [2, 3, 4, 5]\nOutput: #{min_operations_to_permutation([2, 3, 4, 5])}\n\n")
