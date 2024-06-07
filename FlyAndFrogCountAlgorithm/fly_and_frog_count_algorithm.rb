@@ -18,8 +18,14 @@ def frogs(x, s, y)
 end
 
 # Example usage
-X = [1, 4, 5]
-S = [2, 3, 5]
-Y = [2, 3, 5]
-output = frogs(X, S, Y)
+x = [1, 4, 5]
+s = [2, 3, 5]
+y = [2, 3, 5]
+output = frogs(x, s, y)
 puts output.inspect # => [2, 3, 3]
+
+x = [3]
+s = [5]
+y = [7, 1, 2, 6, 4, 5, 3, 0, 8]
+output = frogs(x, s, y)
+puts output.inspect # => [9]
