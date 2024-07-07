@@ -28,3 +28,27 @@ cd word-count-challenge
 - Run Program:
 
    ``ruby word_count.rb``
+
+## Testing
+
+### Set up RSpec for testing:
+
+- Create a spec directory for the tests:
+
+  ```bash
+    mkdir spec
+  ```
+
+- Create a file named word_count_spec.rb inside the spec directory
+
+- Install RSpec:
+
+    ```bash
+      gem install rspec
+     ```
+
+- Run the tests:
+
+    ```bash
+      rspec spec/word_counter_spec.rb
+    ```
